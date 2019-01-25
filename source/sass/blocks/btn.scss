@@ -17,6 +17,9 @@
     background-color: darken($color-default, 5%);
   }
   
+  &:active {
+    background-color: lighten($color-default, 5%);
+  }
 
 	&--green {
 		color: #ffffff;
@@ -26,6 +29,10 @@
     &:focus {
       box-shadow: 0 0 0 2px rgba($color-green, 0.5%);
       background-color: darken($color-green, 5%);
+    }
+
+    &:active {
+      background-color: lighten($color-green, 5%);
     }
 	}
 
@@ -38,6 +45,10 @@
       box-shadow: 0 0 0 2px rgba($color-red, 0.5%);
       background-color: darken($color-red, 5%);
     }
+
+    &:active {
+      background-color: lighten($color-red, 5%);
+    }
 	}
   
   &:disabled,
@@ -47,7 +58,8 @@
     cursor: default;
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
       box-shadow: none;
       background-color: darken($color-default, 10%);
     }
